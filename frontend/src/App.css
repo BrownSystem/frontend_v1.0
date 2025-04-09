@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  /* FONTS */
+  --font-outfit: "Outfit", sans-serif;
+
+  /* COLORS */
+  --brown-dark-950: #361c12;
+  --brown-dark-800: #6e4025;
+  --brown-ligth-400: #cb963b;
+  --brown-ligth-100: #f2e9cf;
+  --brown-ligth-50: #faf6ec;
+}
