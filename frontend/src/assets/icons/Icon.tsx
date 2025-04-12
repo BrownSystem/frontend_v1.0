@@ -1,3 +1,5 @@
+import React from "react";
+
 export const StockIcon = ({ type }: { type: "low" | "ok" }) => {
   if (type === "low") {
     return (
@@ -34,7 +36,11 @@ export const StockIcon = ({ type }: { type: "low" | "ok" }) => {
   );
 };
 
-export const EditIcon = () => (
+interface IEditIcon {
+  children: React.ReactNode;
+}
+
+export const EditIcon: React.FC<IEditIcon> = ({ children }) => (
   <svg
     width="24"
     height="24"
@@ -42,7 +48,6 @@ export const EditIcon = () => (
     fill="#bd8535"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="..." />{" "}
-    {/* Podés copiar el path original o usar un ícono de librería como Lucide */}
+    {children}
   </svg>
 );
